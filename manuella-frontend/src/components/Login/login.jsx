@@ -44,7 +44,32 @@ const Login = () => {
 
                     </div>
 
-                   
+                    <div className="img__btn">
+                        <span className="m--up">Sign Up</span>
+                        <span className="m--in">Sign In</span>
+                    </div>
+                </div>
+                <div className="form-reg sign-up">
+                    <div className="logobox" >
+                        <a >
+                            <img className="logo" src={Logo} alt="logo" />
+                        </a>
+                    </div>
+                    <h2>Create your Account</h2>
+                    <label className="label-email">
+                        <span>Name</span>
+                        <input className="login-input" type="text" />
+                    </label>
+                    <label className="label-pass">
+                        <span>Email</span>
+                        <input className="login-input" type="email" />
+                    </label>
+                    <label className="label-pass">
+                        <span>Password</span>
+                        <input className="login-input" type="password" />
+                    </label>
+                    <button type="button" className="submit">Sign Up</button>
+                </div>
             </div>
         </div>
     );
