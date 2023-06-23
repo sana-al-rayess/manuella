@@ -6,19 +6,30 @@ import "@fontsource/pacifico"; // Defaults to weight 400
 
 
 const Login = () => {
+    useEffect(() => {
+        const toggleSignUp = () => {
+            const cont = document.querySelector('.cont');
+            cont.classList.toggle('s--signup');
+        };
+        const btn = document.querySelector('.img__btn');
+        btn.addEventListener('click', toggleSignUp);
 
+        return () => {
+            btn.removeEventListener('click', toggleSignUp);
+        };
+    }, []);
 
     return (
         <div className="cont">
             <div className="form-login sign-in">
-
-                <div className="logobox" >
+           
+           <div className="logobox" >
                     <a >
                         <img className="logo" src={Logo} alt="logo" />
                     </a>
                 </div>
                 {/* <h2>Welcome</h2> */}
-
+                
                 <label className="label-email">
                     <span>Email</span>
                     <input className="login-input" type="email" />
@@ -34,27 +45,27 @@ const Login = () => {
                 <div className="img">
                     <div className="img__text m--up">
                         <h3>Don't have an account? </h3>
-
-                        <h3> Please Sign up!</h3>
+                        
+                           <h3> Please Sign up!</h3>
                     </div>
-
+                    
                     <div className="img__text m--in">
-
+                        
                         <h3>If you already have an account, just sign in.</h3>
-
+                       
                     </div>
-
+                    
                     <div className="img__btn">
                         <span className="m--up">Sign Up</span>
                         <span className="m--in">Sign In</span>
                     </div>
                 </div>
                 <div className="form-reg sign-up">
-                    <div className="logobox" >
-                        <a >
-                            <img className="logo" src={Logo} alt="logo" />
-                        </a>
-                    </div>
+                <div className="logobox" >
+                    <a >
+                        <img className="logo" src={Logo} alt="logo" />
+                    </a>
+                </div>
                     <h2>Create your Account</h2>
                     <label className="label-email">
                         <span>Name</span>
