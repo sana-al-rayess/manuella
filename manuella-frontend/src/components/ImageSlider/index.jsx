@@ -32,7 +32,10 @@ const ImageSlider = ({ images, interval }) => {
           <a href="#">About</a>
           <a href="#">Contact</a>
         </div>
-       
+        <div className="icon-items">
+          <img className="icon" src={icon1} alt="Icon 1" />
+          <img className="icon" src={icon2} alt="Icon 2" />
+        </div>
       </div>
     </div>
   );
