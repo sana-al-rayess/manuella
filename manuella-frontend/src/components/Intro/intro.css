@@ -1,0 +1,74 @@
+.image-slider-container {
+    position: relative;
+  }
+  
+  .navigation-bar {
+    position: absolute;
+    top: 10%;
+    transform: translate(0, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 180%;
+  }
+  
+  .text-items {
+    display: flex;
+  }
+  
+  .text-items a {
+    padding: 20px;
+    color: #734B1A;
+    text-decoration: none;
+    font-weight: 600;
+    display: flex;
+    margin-left: 5%;
+    transition: color 0.3s;
+  }
+  
+  .text-items a:hover {
+    color: #9c6c31; 
+    
+  }
+  .icon-items {
+    display: flex;
+  }
+  
+  .icon-items .icon {
+    width: 8.5vh;
+    padding-left: 5vh;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  
+  .icon-items .icon:hover {
+    transform: scale(1.2); /* Update with your desired hover effect */
+  }
+  
+  
+  .image-slider {
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+  }
+  
+  .image-slider img {
+    width: 100vw;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .logo-overlay {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    margin-top: 2%;
+  }
+  
+  .logo-img {
+    width: 60%;
+  }
+  
