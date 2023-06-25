@@ -19,9 +19,21 @@ const ImageSlider = ({ images, interval }) => {
 
   return (
     <div className="image-slider-container">
-     
-     
-     
+      <div className="logo-overlay">
+        <img className='logo-img' src={logo} alt="Logo" />
+      </div>
+      <div className="image-slider">
+        <img src={images[currentImageIndex]} alt="Slider Image" />
+      </div>
+      <div className="navigation-bar">
+        <div className="text-items">
+          <a href="#">Home</a>
+          <a href="#">Products</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </div>
+       
+      </div>
     </div>
   );
 };
